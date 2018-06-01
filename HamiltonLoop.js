@@ -66,44 +66,4 @@ const getHamiltonLoop = (graph, vertex) => {
   showSolution(solution);
 };
 
-//usage
-
-const graph1 =
-    [[0,1,1,0,1,1],
-     [1,0,1,1,1,0],
-     [1,1,0,1,1,0],
-     [0,1,1,0,1,1],
-     [1,1,1,1,0,0],
-     [1,0,0,1,0,0]];
-
-getHamiltonLoop(graph1, 1);
-
-const graph2 =
-    [[0,1,1,0,1,1],
-     [1,0,1,0,1,0],
-     [0,1,0,1,1,0],
-     [0,1,1,0,1,0],
-     [1,1,1,1,0,0],
-     [1,0,0,1,0,0]];
-
-getHamiltonLoop(graph2, 2);
-
-const graph3 =
-    [[0,1,0,0,1,1],
-     [1,0,1,0,1,0],
-     [0,1,0,1,1,0],
-     [0,1,1,0,1,0],
-     [1,1,1,1,0,0],
-     [1,0,0,1,0]];
-
-getHamiltonLoop(graph3, 4);
-
-const graph4 =
-    [[0,1,0,0,1,1],
-     [1,0,1,0,1,0],
-     [0,1,0,1,1,0],
-     [0,1,1,0,1,0],
-     [1,1,1,1,0,0],
-     [1,0,0,1,0,0]];
-
-getHamiltonLoop(graph4, 10);
+module.exports = getHamiltonLoop;
