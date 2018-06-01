@@ -55,9 +55,6 @@ const getHamiltonLoop = (graph, vertex) => {
     }
   }
   let solution = [];
-  for (let i = 0; i < graph.length; i++) {
-    solution[i] = -1
-  }
   solution[0] = vertex;
   if (!hamiltonLoopUtil(graph, solution, 1)) {
     console.log("\nSolution does not exist!");
