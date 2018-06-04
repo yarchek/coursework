@@ -32,7 +32,7 @@ const showSolution = (arr) => {
 }
 
 const getHamiltonLoop = (graph, vertex) => {
-  if (vertex > graph.length) {
+  if (vertex > graph.length-1) {
     throw new Error('Vertex can`t be bigger than size of graph!');
   }
   for (let i = 0; i < graph.length; i++) {
