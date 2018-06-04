@@ -33,22 +33,22 @@ const showSolution = (arr) => {
 
 const getHamiltonLoop = (graph, vertex) => {
   if (vertex > graph.length) {
-    throw new Error("Vertex can't be bigger than size of graph!");
+    throw new Error('Vertex can`t be bigger than size of graph!');
   }
   for (let i = 0; i < graph.length; i++) {
     if (graph.length !== graph[i].length) {
-      throw new Error("It`s not a matrix!")
+      throw new Error('It`s not a matrix!');
     }
     for (let j = 0; j < graph.length; j++) {
       if (graph[i][j] !== graph[j][i]) {
-        throw new Error("It`s not a graph!");
+        throw new Error('It`s not a graph!');
       }
     }
   }
   let solution = [];
   solution[0] = vertex;
   if (!hamiltonLoopUtil(graph, solution, 1)) {
-    console.log("\nSolution does not exist!");
+    console.log('\nSolution does not exist!');
     return;
   }
   showSolution(solution);
